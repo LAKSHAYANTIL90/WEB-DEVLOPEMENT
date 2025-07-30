@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets Learn it</title>
+</head>
+
+<body>
+    <h1>Form to apply for the Sigma Web Dev Course - TA</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter Name</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" name="subscribe" id="suscribe" value="yes">
+            <label for="subscribe">Subscribe for the newletter</label>
+        </div>
+        <div>
+            <label for="commetns">Enter your comments here..</label>
+            <br>
+            <textarea name="comment" id="comments" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <label for="select fruits">Select Fruits</label>
+            <select name="fruits" id="select fruits">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>

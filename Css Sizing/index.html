@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+
+        }
+        html{
+            font-size: 12px;
+        }
+        box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 1920px;*/
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        .container{
+            width: 80vw;
+            /*height: 80vh;*/
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 16px;
+            box-sizing: border-box;
+            background-color: aquamarine;
+        }
+        .container > div{
+            font-size: 2rem;
+            width: 50%;
+            border: 2px solid red;
+            text-align: justify;
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+            text-align: justify;
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin: 23px auto;
+            color: black;
+            font-size: 22px;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sizing in CSS</h1>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, ipsa unde quidem dicta, deleniti enim facere magnam, necessitatibus laborum numquam doloribus culpa obcaecati molestias natus eius. Sit vel perferendis magnam dolor optio ducimus? Dolorem quam beatae quas molestiae minus reiciendis esse molestias, fugit quos cupiditate doloremque odit, tempora iste. Consequatur recusandae unde aliquid maxime dicta quia.
+            
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur natus ex reprehenderit, dolorum nulla mollitia. Dolores, et! Ut reprehenderit quod voluptatibus quidem alias explicabo? Tenetur iure accusantium aspernatur corporis sint veniam quo eaque perferendis, ab iste eum? Quam, dolor rem. Inventore, aspernatur! Placeat, excepturi corporis!
+            </div>
+        </div>
+    </div>
+
+    <div class="mycont">
+        I am another container
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts , Text and Color in CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        h1 {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            font-family: "Baloo Bhaina 2", sans-serif;
+            font-optical-sizing: auto;
+            line-height: 4;
+            font-size: 20px;
+            font-weight: 600;
+            color: red;
+        }
+        h2{
+            text-align: center;
+            text-transform: capitalize;
+            text-decoration-color: aqua;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 7px;
+        }
+        .lorem{
+            border: 2px solid red;
+            width: 145px;
+            word-break: break-all;
+            /*text-overflow: ellipsis;
+            overflow: hidden;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>This is a practice of fonts</p>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nihil rerum quas architecto cum qui adipisci, iusto hic illo iure fuga nostrum eos natus voluptatum.</p>
+    </div>
+</body>
+
+</html>

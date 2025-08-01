@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifcity in Css</title>
+    <style>
+        /* Specificity of this sector is 1 */
+        h1{
+            color: aqua;
+        }
+        /* Specificity of this sector is 1 + 10 = 11 */
+        h1.yellow {
+            color: yellow;
+        }
+        /* Specificity of this sector is 10 */
+        .cred{
+            color: red;
+        }
+        /* Specificity of this sector is 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* Specificity of this sector is 10 */
+        [data-x=a]
+        {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:maroon;" class="yellow cred cpurple" data-x="a">CSS Specifcity</h1>
+</body>
+</html>

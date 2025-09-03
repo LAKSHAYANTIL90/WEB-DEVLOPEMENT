@@ -1,0 +1,9 @@
+{
+  "title": "Bollywood Music",
+  "description": "Let these songs be the background score to your love story",
+  "cover": "cover.jpg",
+  "songs": [
+    { "file": "Dhun.mp3", "title": "Dhun", "artist": "Arijit_Singh", "cover": "Dhun.jpg" },
+    { "file": "Duniya_Alag.mp3", "title": "Duniya_Alag", "artist": "Arijit_Singh", "cover": "Duniya_Alag.jpeg" }
+  ]
+}

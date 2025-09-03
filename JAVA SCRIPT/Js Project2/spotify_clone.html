@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Clone</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/spotify_style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <div class="spotify-logo">♪</div>
+      <button class="home-btn">
+        <svg class="icon" viewBox="0 0 24 24">
+          <path d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33z" />
+        </svg>
+      </button>
+    </div>
+    <div class="search-bar">
+      <input type="text" class="search-input" placeholder="What do you want to play?">
+    </div>
+    <div class="user-section">
+      <button class="premium-btn">Explore Premium</button>
+      <button class="install-btn">Install App</button>
+      <div class="user-avatar">L</div>
+    </div>
+  </div>
+
+  <!-- Main Container -->
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <div class="library-header">
+        <div class="library-title">Your Library</div>
+      </div>
+      <div class="library-filters">
+        <button class="filter-btn">Playlists</button>
+        <button class="filter-btn">Artists</button>
+      </div>
+      <div class="library-list"><!-- Songs injected dynamically --></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Dynamic Album Section -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Big Hits!</h2>
+          <a href="#" class="show-all">Show all</a>
+        </div>
+        <div class="cards-grid albumContainer"><!-- Albums injected by JS --></div>
+      </div>
+
+      <!-- Static Section Example -->
+      <div class="content-section">
+        <div class="section-header">
+          <h2 class="section-title">Editor's Pick</h2>
+        </div>
+        <div class="cards-grid">
+          <div class="card">
+            <img src="https://i.scdn.co/image/ab67706f00000002f0a1b2c3d4e5f6g7h8i9j0k1" alt="Afrobeats">
+            <h3>Nollywood Afrobeats</h3>
+            <p>The best Afrobeats tracks</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel (hidden by default) -->
+    <div class="right-panel hidden">
+      <!-- <button id="close-panel" class="close-btn">✖</button> -->
+      <div class="panel-content">
+        <img id="player-album-art" src="img/music.svg" alt="Album Art">
+        <h3 id="player-title">Song Title</h3>
+        <p id="player-artist">Artist</p>
+        <!-- other details here -->
+      </div>
+    </div>
+
+    <div class="now-playing">
+      <img id="player-album-art" src="songs/Arijit Singh/song1.jpg" alt="Album Art" class="album-art">
+      <div class="song-info">
+        <h2 id="player-title" class="song-title">Select a Song</h2>
+        <p id="player-artist" class="artist-name">Artist</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Bottom Player -->
+  <div class="bottom-player">
+    <div class="player-left">
+      <img id="player-album-art-bottom" src="img/music.svg" alt="Track" class="player-track-img">
+      <div class="player-track-info">
+        <h4 id="player-title-bottom">Select a song</h4>
+        <p id="player-artist-bottom">Artist</p>
+      </div>
+    </div>
+
+    <div class="player-center">
+      <div class="player-controls">
+        <img id="previous" src="img/prevsong.svg" alt="Previous">
+        <img id="play" src="img/play.svg" alt="Play">
+        <img id="next" src="img/nextsong.svg" alt="Next">
+      </div>
+      <div class="progress-bar">
+        <span id="current-time">00:00</span>
+        <div class="progress">
+          <div class="progress-fill"></div>
+        </div>
+        <span id="total-time">00:00</span>
+      </div>
+    </div>
+
+    <div class="player-right">
+      <span class="volume">
+        <img id="volume-icon" src="img/volume.svg" alt="volume">
+      </span>
+      <input type="range" class="volume-range" value="100" max="100">
+    </div>
+  </div>
+</body>
+
+</html>
